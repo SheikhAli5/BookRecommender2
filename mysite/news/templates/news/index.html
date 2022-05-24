@@ -1,0 +1,317 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <title>{{ title }}</title>
+  </head>
+  <body>
+
+
+      <div class="mdl">
+        <div class="circles">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
+          <div class="circle circle-5"></div>
+        </div>
+        <h1 class="title">
+          Пожалуйста, пройдите опрос для получения рекоммендаций
+        </h1>
+        <div class="card">
+          <form class="form">
+<!--            <h1>Регистрация:</h1>-->
+
+<!-- One "tab" for each step in the form: -->
+<div class="tab">
+  <div class="tabInside">
+    Имя:
+    <p><input placeholder="Имя..." oninput="this.className = ''" name="firstname"></p>
+    <p><input placeholder="Фамилия..." oninput="this.className = ''"  name="lastname"></p>
+  </div>
+</div>
+
+<div class="tab">
+  <div class="tabInside">Любимые жанры:
+    <div class="allGenresDiv">
+
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Fiction" name="interest" value="Fiction">
+        <label for="Fiction">Fiction</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Romance" name="interest" value="Romance">
+        <label for="Romance">Romance</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Fantasy" name="interest" value="Fantasy">
+        <label for="Fantasy">Fantasy</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Young Adult" name="interest" value="Young Adult">
+        <label for="Young Adult">Young Adult</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Contemporary" name="interest" value="Contemporary">
+        <label for="Contemporary">Contemporary</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Nonfiction" name="interest" value="Nonfiction">
+        <label for="Nonfiction">Nonfiction</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Adult" name="interest" value="Adult">
+        <label for="Adult">Adult</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Novels" name="interest" value="Novels">
+        <label for="Novels">Novels</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Mystery" name="interest" value="Mystery">
+        <label for="Mystery">Mystery</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Historical Fiction" name="interest" value="Historical Fiction">
+        <label for="Historical Fiction">Historical Fiction</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Classics" name="interest" value="Classics">
+        <label for="Classics">Classics</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Adventure" name="interest" value="Adventure">
+        <label for="Adventure">Adventure</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Historical" name="interest" value="Historical">
+        <label for="Historical">Historical</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Paranormal" name="interest" value="Paranormal">
+        <label for="Paranormal">Paranormal</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Literature" name="interest" value="Literature">
+        <label for="Literature">Literature</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Science Fiction" name="interest" value="Science Fiction">
+        <label for="Science Fiction">Science Fiction</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Childrens" name="interest" value="Childrens">
+        <label for="Childrens">Childrens</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Thriller" name="interest" value="Thriller">
+        <label for="Thriller">Thriller</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Magic" name="interest" value="Magic">
+        <label for="Magic">Magic</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Humor" name="interest" value="Humor">
+        <label for="Humor">Humor</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="History" name="interest" value="History">
+        <label for="History">History</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Crime" name="interest" value="Crime">
+        <label for="Crime">Crime</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Contemporary Romance" name="interest" value="Contemporary Romance">
+        <label for="Contemporary Romance">Contemporary Romance</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Suspense" name="interest" value="Suspense">
+        <label for="Suspense">Suspense</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Urban Fantasy" name="interest" value="Urban Fantasy">
+        <label for="Urban Fantasy">Urban Fantasy</label>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab">
+  <div class="tabInside">Любимые жанры:
+    <div class="allGenresDiv">
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Middle Grade" name="interest" value="Middle Grade">
+        <label for="Middle Grade">Middle Grade</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Chick Lit" name="interest" value="Chick Lit">
+        <label for="Chick Lit">Chick Lit</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Science Fiction Fantasy" name="interest" value="Science Fiction Fantasy">
+        <label for="Science Fiction Fantasy">Science Fiction Fantasy</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Supernatural" name="interest" value="Supernatural">
+        <label for="Supernatural">Supernatural</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Biography" name="interest" value="Biography">
+        <label for="Biography">Biography</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Mystery Thriller" name="interest" value="Mystery Thriller">
+        <label for="Mystery Thriller">Mystery Thriller</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Paranormal Romance" name="interest" value="Paranormal Romance">
+        <label for="Paranormal Romance">Paranormal Romance</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Horror" name="interest" value="Horror">
+        <label for="Horror">Horror</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Teen" name="interest" value="Teen">
+        <label for="Teen">Teen</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Philosophy" name="interest" value="Philosophy">
+        <label for="Philosophy">Philosophy</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Adult Fiction" name="interest" value="Adult Fiction">
+        <label for="Adult Fiction">Adult Fiction</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Short Stories" name="interest" value="Short Stories">
+        <label for="Short Stories">Short Stories</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Literary Fiction" name="interest" value="Literary Fiction">
+        <label for="Literary Fiction">Literary Fiction</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="British Literature" name="interest" value="British Literature">
+        <label for="British Literature">British Literature</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Realistic Fiction" name="interest" value="Realistic Fiction">
+        <label for="Realistic Fiction">Realistic Fiction</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Drama" name="interest" value="Drama">
+        <label for="Drama">Drama</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Religion" name="interest" value="Religion">
+        <label for="Religion">Religion</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="New Adult" name="interest" value="New Adult">
+        <label for="New Adult">New Adult</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Memoir" name="interest" value="Memoir">
+        <label for="Memoir">Memoir</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="War" name="interest" value="War">
+        <label for="War">War</label>
+      </div>
+    </div>
+    <div class="genresDiv">
+      <div class="checkboxDiv">
+        <input type="checkbox" id="20th Century" name="interest" value="20th Century">
+        <label for="20th Century">20th Century</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Vampires" name="interest" value="Vampires">
+        <label for="Vampires">Vampires</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Christian" name="interest" value="Christian">
+        <label for="Christian">Christian</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="Graphic Novels" name="interest" value="Graphic Novels">
+        <label for="Graphic Novels">Graphic Novels</label>
+      </div>
+      <div class="checkboxDiv">
+        <input type="checkbox" id="American" name="interest" value="American">
+        <label for="American">American</label>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab">
+  <div class="tabInside">Login Info:
+    <p><input placeholder="Username..." oninput="this.className = ''"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''"></p>
+  </div>
+</div>
+
+<div class="btns" style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" class="btn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" class="btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    <button type="submit" class="btn" id="sbmt" value="Post">Sbmt</button>
+  </div>
+</div>
+
+<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+          </form>
+        </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>
